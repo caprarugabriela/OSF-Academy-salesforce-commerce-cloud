@@ -8,7 +8,7 @@ const Youtube = () => {
             <AspectRatio mt="10" maxW="980px" ratio={4 / 3}>
                 <iframe
                     src="https://www.youtube.com/embed/R6g8H13lqpE?si=2mRG01Jfe6XA4lFp"
-                    title="Christmas Playlist"
+                    title="Christmas"
                     allowFullScreen
                 />
             </AspectRatio>
