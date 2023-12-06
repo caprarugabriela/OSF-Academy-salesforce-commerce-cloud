@@ -38,5 +38,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "osfdigital.wingman.workspaceIndexingSettings": {
     "indexingState": 0
-  }
+  },
+  "eslint.workingDirectories": [{ "mode": "auto" }]
 }
