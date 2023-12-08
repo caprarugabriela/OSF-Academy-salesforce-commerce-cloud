@@ -44,7 +44,11 @@ const {handler} = runtime.createHandler(options, (app) => {
                 directives: {
                     'img-src': [
                         // Default source for product images - replace with your CDN
-                        '*.commercecloud.salesforce.com'
+                        '*.commercecloud.salesforce.com',
+                        "'self'",
+                        'https://images.unsplash.com',
+                        'https://openweathermap.org',
+                        'data:'
                     ],
                     'script-src': [
                         // Used by the service worker in /worker/main.js
@@ -52,7 +56,13 @@ const {handler} = runtime.createHandler(options, (app) => {
                     ],
                     'connect-src': [
                         // Connect to Einstein APIs
-                        'api.cquotient.com'
+                        'api.cquotient.com',
+                        'api.openweathermap.org'
+                    ],
+                    'frame-src': [
+                        "'self'",
+                        'https://www.youtube.com',
+                        'https://api.openweathermap.org'
                     ]
                 }
             }
